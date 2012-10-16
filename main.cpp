@@ -60,10 +60,10 @@ int main(int argc, char* argv[])
 	switch(iHashType)
 	{
 	case HASH_MD5:
-		printf("%lu", MD5_uint64(strContent.c_str(), strContent.length()));
+		printf("%lu\n", MD5_uint64(strContent.c_str(), strContent.length()));
 		break;
 	default:
-		printf("%lu", CityHash64(strContent.c_str(), strContent.length()));
+		printf("%lu\n", CityHash64(strContent.c_str(), strContent.length()));
 		break;
 	}
 
